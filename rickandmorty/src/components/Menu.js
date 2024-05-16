@@ -1,8 +1,9 @@
 const Menu = () => {
     const $menu = document.createElement('div')
+    $menu.className= 'link';
     $menu.innerHTML = `
-    <a href='#/'>Home</a>
     <a href='#/about'>About Me</a>
+    <a href='#/'>Home</a>
 `
     return $menu;
 }

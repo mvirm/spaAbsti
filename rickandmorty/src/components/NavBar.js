@@ -5,6 +5,7 @@ import Search from "./Search.js";
 
 const NavBar = () => {
     const $navBar = document.createElement('header');
+    $navBar.className= 'nav'
 
     $navBar.appendChild(Title());
     $navBar.appendChild(Menu());
