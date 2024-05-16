@@ -4,11 +4,12 @@ fetch(url)
 .then(response => response.ok ? response.json() : Promise.reject(response))
 .then(json => cbSuccess(json))
 .catch(error => {
-    let message= error.status.text || 'ocurrió un error';
     document.getElementById('root')
-    .innerHTML= <div class="error" >
-        <p>`Error ${error.status}: ${message}`</p>
+    .innerHTML=`
+    <div className="error" >
+        <p>Error: ${error.message}</p>
     </div>
+    ` 
 })
 };
 
