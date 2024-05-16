@@ -1,6 +1,6 @@
-const ajaxFetch = (props) => {
+const ajaxFetch = async (props) => {
  let {url, cbSuccess} = props;
-fetch(url)
+await fetch(url)
 .then(response => response.ok ? response.json() : Promise.reject(response))
 .then(json => cbSuccess(json))
 .catch(error => {
