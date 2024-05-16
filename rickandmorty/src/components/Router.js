@@ -1,4 +1,4 @@
-import  { url, GET_ALL_CHARACTER, GET_CHARACTER_BY_ID } from '../utils/apiRoutes.js';
+import  {  GET_ALL_CHARACTER } from '../utils/apiRoutes.js';
 import ajaxFetch from '../utils/ajaxFetch.js';
 import Card from './Card.js';
 import AboutMe from './AboutMe.js';
@@ -22,7 +22,7 @@ const Router = () => {
     }
 })
 } else if (hash.includes('/?search')) {
-    event.preventDefault();
+    // event.preventDefault();
     $view.innerHTML= `<h2>soy el search</h2>`
 } else if (hash === '#/about') {
    $view.appendChild(AboutMe());

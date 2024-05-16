@@ -13,23 +13,6 @@ $root.appendChild(NavBar())
 $root.appendChild(ViewContainer())
 $root.appendChild(Spinner());
 Router();
-//console.log($root);
-// ajaxFetch({
-//     url: GET_ALL_CHARACTER,
-//     cbSuccess: async (characters) => {
-//         let allCharacters = characters.results;
-//         //console.log(allCharacters);
-//         let $container = document.getElementById('view');
-//         $container.innerHTML = ''; 
-
-//         await allCharacters.forEach(character => {
-//             $container.appendChild(Card(character));
-//         });
-
-//         document.querySelector('.spinner-container').style.display = 'none';
-//     }
-// });
-
 }
 
 export default App;
